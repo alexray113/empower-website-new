@@ -1,0 +1,33 @@
+/* ============ homepage styling ============ */
+
+/* #homepage-row-1, #homepage-row-3 { 
+    background-color: #f57600;
+} */
+
+#homepage-row-1-div-1 { 
+    justify-content: center;
+}
+
+#homepage-row-1-div-2 img{
+    width: 95%;
+    height: auto;
+    margin: 20px;
+}
+
+/* #homepage-row-2 {
+    background-color: #ffe2dc;
+} */
+
+.homepage-podcast-link-wrapper img {
+    height: 300px;
+    width: auto;
+}
+
+#podcast-hyperlink {
+    display: block;
+}
+
+.homepage-links-wrapper img {
+    height: 100px;
+    width: 100px;
+}

@@ -1,9 +1,87 @@
-{% extends 'base.html' %}
-{% block title %}Empower{% endblock %}
+{% extends 'base.html' %} {% block title %}Empower{% endblock %} {% block head
+%}
+<link rel="stylesheet" href="/static/index.css" />
+{% endblock %} {% block body %}
 
-{% block head %}{% endblock %}
+<div class="container">
 
-{% block body %}
-<h1>Hello World!</h1>
+  <!-- row-1 header + contact button-->
 
+  <div class="row orange-bg-color" id="homepage-row-1">
+    <div class="col-8" id="homepage-row-1-div-1">
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+          necessitatibus velit accusantium nemo corporis quae beatae adipisci
+          enim tenetur, nulla porro ad commodi fugit dolores numquam doloremque
+          quod mollitia corrupti odio distinctio nihil dolorum. Ea doloribus eum
+          dolorum ad porro.
+        </p>
+      </div>
+      <button class="contact-us-btn" id="contact-us-btn__homepage">
+        Contact Us
+      </button>
+    </div>
+    <div class="col-4" id="homepage-row-1-div-2">
+      <img
+        src="/static/img/priscilla-du-preez-K8XYGbw4Ahg-unsplash.jpg"
+        class="img-fluid"
+        alt=""
+      />
+    </div>
+  </div>
+
+  <!-- row 2 services -->
+
+  <div class="d-flex flex-wrap row salmon-bg-color" id="homepage-row-2">
+    <div class="col-12">
+      <h2 class="utility-header">Services</h2>
+    </div>
+    <div class="col-6">hello</div>
+    <div class="col-6">oops</div>
+    <div class="col-6">poops</div>
+    <div class="col-6">butt</div>
+  </div>
+
+  <!-- row 3 links -->
+
+  <div class="row orange-bg-color" id="homepage-row-3">
+    <h2 class="utility-header">Some Links</h2>
+    <div class="col-6 homepage-podcast-link-wrapper">
+      <img
+        class="img-fluid"
+        src="static/img/nima-sarram-4JMOnj7NFKM-unsplash.jpg"
+        alt=""
+      />
+      <a id="podcast-hyperlink" href="">Title name</a>
+    </div>
+
+    <div class="col-6">
+      <div class="homepage-links-wrapper">
+        <img
+          class="img-fluid"
+          src="static/img/leo-maverick-O65TY4EAgQ0-unsplash.jpg"
+          alt=""
+        />
+        <a href="">Title name</a>
+      </div>
+      <div class="homepage-links-wrapper">
+        <img
+          class="img-fluid"
+          src="static/img/leo-maverick-O65TY4EAgQ0-unsplash.jpg"
+          alt=""
+        />
+        <a href="">Title name</a>
+      </div>
+      <div class="homepage-links-wrapper">
+        <img
+          class="img-fluid"
+          src="static/img/leo-maverick-O65TY4EAgQ0-unsplash.jpg"
+          alt=""
+        />
+        <a href="">Title name</a>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}

@@ -1,0 +1,24 @@
+/* ============ utilities styling ============ */
+
+.orange-bg-color {
+    background-color: #f57600;
+}
+
+.salmon-bg-color {
+    background-color: #ffe2dc;
+}
+
+.purple-bg-color {
+    background-color: #b6206b;
+}
+
+.content-row-margins {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.utility-header {
+    text-align: center;
+}
+
+/* ============ base styling ============ */
