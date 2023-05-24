@@ -16,6 +16,10 @@ def view_homepage():
 
     return render_template("index.html")
 
+@app.route("/services")
+def view_services():
+
+    return render_template("services.html")
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)

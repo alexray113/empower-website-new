@@ -1,0 +1,17 @@
+#services-row-1 {
+    padding: 2.5em;
+}
+
+#services-row-2 {
+    padding: 6em;
+}
+
+@media (max-width: 768px) {
+    #services-row-1 img {
+        padding-bottom: 1em;
+    }
+
+    #services-row-2 {
+        padding: 4em;
+    }
+}
