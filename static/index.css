@@ -1,11 +1,8 @@
 /* ============ homepage styling ============ */
 
-/* #homepage-row-1, #homepage-row-3 { 
-    background-color: #f57600;
-} */
-
 #homepage-row-1-div-1 { 
     justify-content: center;
+    padding: 35px;
 }
 
 #homepage-row-1-div-2 img{
@@ -14,11 +11,7 @@
     margin: 20px;
 }
 
-/* #homepage-row-2 {
-    background-color: #ffe2dc;
-} */
-
-.homepage-podcast-link-wrapper img {
+/* .homepage-podcast-link-wrapper img {
     height: 300px;
     width: auto;
 }
@@ -31,3 +24,20 @@
     height: 100px;
     width: 100px;
 }
+
+@media (max-width: 768px) {
+    .homepage-podcast-link-wrapper img {
+        justify-self: center;
+    }
+
+    .homepage-links-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%
+    }
+
+    .homepage-links-wrapper a {
+        display: block;
+    }
+} */
