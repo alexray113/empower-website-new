@@ -1,0 +1,26 @@
+{
+  "data": [
+    {
+      "name": "karl-bolton",
+      "fullname": "Karl Bolton",
+      "img": "sergio-de-paula-c_GmwfHBDzk-unsplash.jpg",
+      "email": "karl.s.bolton@gmail.com",
+      "aboutLink": "placeholder",
+      "content": "placeholder",
+      "service1": "Individual Therapy",
+      "service2": "Group Therapy",
+      "service3": "DBT Skills"
+    },
+    {
+      "name": "trey",
+      "fullname": "Trey French",
+      "img": "sergio-de-paula-c_GmwfHBDzk-unsplash.jpg",
+      "email": "treyfrenchcounseling@gmail.com",
+      "aboutLink": "placeholder",
+      "content": "placeholder",
+      "service1": "Individual Therapy",
+      "service2": "Group Therapy",
+      "service3": "EMDR"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+/* .contact-portrait-wrapper {
+    height: 
+} */
+
+.contact-portrait {
+    object-fit: cover;
+}
+
+.contact-header {
+    display: flex;
+    /* align-items: center; */
+}
+
+.contact-header h1 {
+    align-self: center;
+}
