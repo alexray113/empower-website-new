@@ -1,5 +1,9 @@
 /* ============ utilities styling ============ */
 
+* {
+  box-sizing: border-box;
+}
+
 .orange-bg-color {
     background-color: #f57600;
 }

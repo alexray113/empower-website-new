@@ -1,6 +1,18 @@
 /* ============ homepage styling ============ */
 
-#homepage-row-1-div-1 { 
+.card {
+    max-width: 45%;
+}
+
+.img-wrapper {
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #homepage-row-1-div-1 { 
     justify-content: center;
     padding: 35px;
 }
@@ -11,7 +23,7 @@
     margin: 20px;
 }
 
-/* .homepage-podcast-link-wrapper img {
+.homepage-podcast-link-wrapper img {
     height: 300px;
     width: auto;
 }
@@ -23,9 +35,9 @@
 .homepage-links-wrapper img {
     height: 100px;
     width: 100px;
-}
+} */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .homepage-podcast-link-wrapper img {
         justify-self: center;
     }
