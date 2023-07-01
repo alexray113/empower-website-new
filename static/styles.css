@@ -1,128 +1,129 @@
 /* ============ utilities styling ============ */
 
-* {
-  box-sizing: border-box;
-}
-
 .orange-bg-color {
-    background-color: #f57600;
+  background-color: #f57600;
 }
 
 .salmon-bg-color {
-    background-color: #ffe2dc;
+  background-color: #ffe2dc;
 }
 
 .purple-bg-color {
-    background-color: #b6206b;
+  background-color: #b6206b;
 }
 
 .content-row-margins {
-    margin-top: 2em;
-    margin-bottom: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .utility-header {
-    text-align: center;
+  text-align: center;
 }
 
-.full-padding-halfem{
+.full-padding-halfem {
   padding: 0.5em;
 }
 
 .bottom-padding-1em {
-    padding-bottom: 1em;
+  padding-bottom: 1em;
 }
 
 .bottom-padding-15em {
-    padding-bottom: 1.5em;
+  padding-bottom: 1.5em;
 }
 
 /* ============ base styling ============ */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
-    background-image: url(/static/img/priscilla-du-preez-K8XYGbw4Ahg-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow-x: hidden;
+  background-image: url(/static/img/priscilla-du-preez-K8XYGbw4Ahg-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  min-width: 100vw;
 }
 
 .navbar-brand {
-    padding: 0.3em;
-  }
+  padding: 0.3em;
+}
 
 #navbarNav {
-    justify-content: right;
-    text-align: right;
-  }
-  
-  @media (max-width: 768px) {
-    #navbarNav {
-      justify-content: center;
-      text-align: center;
-    }
-  }
-  
-  .navbar-brand:hover {
-    background-color: #7b8ac2;
-    color: #d5d2cb;
-    border-radius: 7px;
-  }
-  
-  .nav-link:hover {
-    background-color: #7b8ac2;
-    color: #d5d2cb;
-    border-radius: 7px;
-  }
-  
-  /*------------ base.html footer CSS ------------*/
-  
-  footer {
-    width: 100vw;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 0px;
-    padding-right: 0px;
-    color: #d5d2cb;
-  }
-  
-  #footer-contact-info {
-    justify-content: left;
-    text-align: left;
-    padding-left: 0px;
-  }
-  
-  #footer-logo {
+  justify-content: right;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  #navbarNav {
     justify-content: center;
     text-align: center;
-    align-items: end;
   }
-  
-  #footer-logo-wrapper > * {
-    padding-top: 15px;
-  }
-  
+}
+
+.navbar-brand:hover {
+  background-color: #7b8ac2;
+  color: #d5d2cb;
+  border-radius: 7px;
+}
+
+.nav-link:hover {
+  background-color: #7b8ac2;
+  color: #d5d2cb;
+  border-radius: 7px;
+}
+
+/*------------ base.html footer CSS ------------*/
+
+footer {
+  width: 100vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+  color: #d5d2cb;
+}
+
+#footer-contact-info {
+  justify-content: left;
+  text-align: left;
+  padding-left: 0px;
+}
+
+#footer-logo {
+  justify-content: center;
+  text-align: center;
+  align-items: end;
+}
+
+#footer-logo-wrapper > * {
+  padding-top: 15px;
+}
+
+#footer-nav {
+  justify-content: right;
+  text-align: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#footer-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
   #footer-nav {
-    justify-content: right;
-    text-align: right;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    justify-content: center;
+    text-align: center;
   }
-  
-  #footer-nav ul {
-    margin: 0;
-    padding: 0;
+
+  #footer-contact-info {
+    justify-content: center;
+    text-align: center;
   }
-  
-  @media (max-width: 768px) {
-    #footer-nav {
-      justify-content: center;
-      text-align: center;
-    }
-  
-    #footer-contact-info {
-      justify-content: center;
-      text-align: center;
-    }
-  }
+}

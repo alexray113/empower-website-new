@@ -6,10 +6,19 @@
 
 .img-wrapper {
     aspect-ratio: 1/1;
+    height: 90%;
+    width: auto;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.img-hole {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    overflow: hidden;
 }
 
 /* #homepage-row-1-div-1 { 

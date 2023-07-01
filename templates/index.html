@@ -3,12 +3,11 @@
 <link rel="stylesheet" href="/static/index.css" />
 {% endblock %} {% block body %}
 
-<div class="container">
+<div class="container-fluid">
   <!-- row-1 header + contact button-->
 
-  <div class="text-center fs-4 content-row-margins rounded row orange-bg-color" id="homepage-row-1">
-    <div class="align-self-center col-12 order-2 col-sm-8 order-sm-1" id="homepage-row-1-div-1">
-      <div>
+  <div class="text-center fs-4 content-row-margins row orange-bg-color" id="homepage-row-1">
+    <div class="pb-4 p-sm-4 pb-lg-0 align-self-center col-12 order-2 col-sm-8 order-sm-1" id="homepage-row-1-div-1">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
           necessitatibus velit accusantium nemo corporis quae beatae adipisci
@@ -16,22 +15,24 @@
           quod mollitia corrupti odio distinctio nihil dolorum. Ea doloribus eum
           dolorum ad porro.
         </p>
-      </div>
       <button class="contact-us-btn btn btn-lg btn-success" id="contact-us-btn__homepage">
         Contact Us
       </button>
     </div>
-    <div class="col-12 order-1 col-sm-4 order-sm-2" id="homepage-row-1-div-2">
+    <div class="img-hole col-12 order-1 col-sm-4 order-sm-2 d-flex justify-content-center align-items-center"  id="homepage-row-1-div-2">
+    <div class="img-wrapper shadow rounded d-flex justify-content-center align-items-center">
       <img
         src="/static/img/priscilla-du-preez-K8XYGbw4Ahg-unsplash.jpg"
         class="rounded mx-auto d-block"
         alt=""
       />
     </div>
+   </div>
+  </div>
   </div>
 
   <!-- row 2 services -->
-
+<div class="container">
   <div
     class="content-rd-flex flex-wrap row rounded salmon-bg-color"
     id="homepage-row-2"
