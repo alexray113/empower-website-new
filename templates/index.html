@@ -3,18 +3,18 @@
 <link rel="stylesheet" href="/static/index.css" />
 {% endblock %} {% block body %}
 
-<div class="container-fluid">
+<div class="container">
   <!-- row-1 header + contact button-->
 
   <div
-    class="text-center fs-4 content-row-margins row orange-bg-color"
+    class="cta-banner text-center fs-5 my-4 rounded row orange-bg-color"
     id="homepage-row-1"
   >
     <div
-      class="pb-4 p-sm-4 pb-lg-0 align-self-center col-12 order-2 col-sm-8 order-sm-1"
+      class="py-4 px-lg-5 align-self-center col-12 order-2 col-md-8 order-md-1"
       id="homepage-row-1-div-1"
     >
-      <p>
+      <p class="">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
         necessitatibus velit accusantium nemo corporis quae beatae adipisci enim
         tenetur, nulla porro ad commodi fugit dolores numquam doloremque quod
@@ -29,15 +29,15 @@
       </button>
     </div>
     <div
-      class="img-hole col-12 order-1 col-sm-4 order-sm-2 d-flex justify-content-center align-items-center"
+      class="img-hole col-12 order-1 col-md-4 order-md-2 d-flex justify-content-center align-items-center"
       id="homepage-row-1-div-2"
     >
       <div
-        class="img-wrapper shadow rounded d-flex justify-content-center align-items-center"
+        class="img-wrapper ratio ratio-1x1 p-4 d-flex overflow-hidden justify-content-center align-items-center"
       >
         <img
           src="/static/img/priscilla-du-preez-K8XYGbw4Ahg-unsplash.jpg"
-          class="rounded mx-auto d-block"
+          class="shadow object-fit-cover p-4"
           alt=""
         />
       </div>
@@ -48,76 +48,84 @@
 <!-- row 2 services -->
 <div class="container">
   <div
-    class="content-rd-flex flex-wrap row rounded salmon-bg-color"
+    class="mb-4 flex-wrap row rounded salmon-bg-color"
     id="homepage-row-2"
   >
     <div class="text-center fs-1 col-12">Services</div>
     <div class="text-center col-12 col-sm-6 fs-3 mb-3">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        fill="currentColor"
-        class="bi bi-diamond"
-        viewBox="0 0 16 16"
-      >
-        <path
-          d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"
-        />
-      </svg>
-      hello1
+      <h2>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-diamond"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"
+          />
+        </svg>
+        hello1
+      </h2>
     </div>
     <div class="text-center col-12 col-sm-6 fs-3 mb-3">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        fill="currentColor"
-        class="bi bi-diamond"
-        viewBox="0 0 16 16"
-      >
-        <path
-          d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"
-        />
-      </svg>
-      hello2
+      <h2>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-diamond"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"
+          />
+        </svg>
+        hello2
+      </h2>
     </div>
     <div class="text-center col-12 col-sm-6 fs-3 mb-3">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        fill="currentColor"
-        class="bi bi-diamond"
-        viewBox="0 0 16 16"
-      >
-        <path
-          d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"
-        />
-      </svg>
-      hello3
+      <h2>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-diamond"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"
+          />
+        </svg>
+        hello3
+      </h2>
     </div>
     <div class="text-center col-12 col-sm-6 fs-3 mb-3">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        fill="currentColor"
-        class="bi bi-diamond"
-        viewBox="0 0 16 16"
-      >
-        <path
-          d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"
-        />
-      </svg>
-      hello4
+      <h2>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-diamond"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"
+          />
+        </svg>
+        hello4
+      </h2>
     </div>
   </div>
 
   <!-- row 3 links -->
 
   <div
-    class="content-row-margins row rounded orange-bg-color d-flex flex-wrap justify-content-around"
+    class="mb-4 row rounded orange-bg-color d-flex flex-wrap justify-content-around"
     id="homepage-row-3"
   >
     <div class="text-center fs-1">Some Links</div>

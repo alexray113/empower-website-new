@@ -3,3 +3,19 @@
 .card {
     max-width: 45%;
 }
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 95%;
+    }
+
+    .img-wrapper {
+        max-width: 95%;
+    }
+}
+
+@media (min-width: 576px) {
+    .cta-banner {
+        font-size: 2rem;
+    }
+}
