@@ -49,6 +49,15 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+@media (max-width: 768px) {
+  body {
+    min-width: none;
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -71,16 +80,8 @@ h3 {
   font-size: 32px;
 }
 
-@media (max-width: 768px) {
-  body {
-    min-width: none;
-  }
-  body::-webkit-scrollbar {
-    display: none;
-  }
-}
-
 .navbar-brand {
+  font-weight: bold;
   padding: 0.3em;
   font-family: "Playfair Display", serif;
 }
@@ -88,6 +89,7 @@ h3 {
 #navbarNav {
   justify-content: right;
   text-align: right;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {

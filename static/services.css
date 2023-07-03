@@ -4,6 +4,17 @@
 
 #services-row-2 {
     padding: 6em;
+    justify-content: center;
+}
+
+.services-divider-svg {
+    max-width: 50%;
+}
+
+.services-img {
+    aspect-ratio: 21/9;
+    width: 100%;
+    object-fit: cover;
 }
 
 @media (max-width: 768px) {

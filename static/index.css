@@ -3,7 +3,7 @@
 /* ============ CTA / hero-banner styling ============ */
 
 .cta-hero {
-  height: 100vh;
+  height: 96vh;
   background-image: url(/static/img/priscilla-du-preez-K8XYGbw4Ahg-unsplash.jpg);
   background-size: cover;
   position: relative;
@@ -23,6 +23,7 @@
 .cta-hero-text h1 {
     line-height: 1.4em;
     margin-bottom: .5em;
+    max-width: 20ch;
 }
 
 .cta-hero-text p {
@@ -50,6 +51,18 @@
     }
 }
 
+@media (max-height: 500px) {
+    .cta-hero {
+        height: 85vh;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 18px;
+    }
+}
+
 @media (max-width: 768px) {
 
     .cta-hero-text {
@@ -62,6 +75,14 @@
 }
 
 /* ============ services banner styling ============ */
+
+.services-container {
+    min-height: 50vh;
+}
+
+.section-header {
+    padding: 1.5em 0;
+}
 
 /* ============ links cards styling ============ */
 
