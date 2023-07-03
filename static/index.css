@@ -1,21 +1,67 @@
 /* ============ homepage styling ============ */
 
+/* ============ CTA / hero-banner styling ============ */
+
+.cta-hero {
+  height: 100vh;
+  background-image: url(/static/img/priscilla-du-preez-K8XYGbw4Ahg-unsplash.jpg);
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.cta-hero-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+  color:antiquewhite;
+}
+
+.cta-hero-text h1 {
+    line-height: 1.25em;
+    margin-bottom: .5em;
+}
+
+.cta-hero-text p {
+    line-height: 1em;
+    margin-bottom: 1.5em;
+}
+
+.cta-hero-text::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: left;
+  background-color: rgba(0, 0, 0, 0.664);
+  z-index: -1;
+}
+
+/* ============ services banner styling ============ */
+
+/* ============ links cards styling ============ */
+
 .card {
-    max-width: 45%;
+  max-width: 45%;
 }
 
 @media (max-width: 768px) {
-    .card {
-        max-width: 95%;
-    }
+  .card {
+    max-width: 95%;
+  }
 
-    .img-wrapper {
-        max-width: 95%;
-    }
+  .img-wrapper {
+    max-width: 95%;
+  }
 }
 
 @media (min-width: 576px) {
-    .cta-banner {
-        font-size: 2rem;
-    }
+  .cta-banner {
+    font-size: 2rem;
+  }
 }
