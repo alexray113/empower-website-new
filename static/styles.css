@@ -40,7 +40,7 @@
 }
 
 body {
-  background-image: url(/static/img/priscilla-du-preez-K8XYGbw4Ahg-unsplash.jpg);
+  background-image: url(/static/img/roman-kraft-0EVKn3-5JSU-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -56,6 +56,18 @@ h4,
 h5,
 h6 {
   font-family: "Playfair Display", serif;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 32px;
 }
 
 @media (max-width: 768px) {
