@@ -1,28 +1,48 @@
+html {
+  scroll-behavior: smooth;
+}
+
 #services-row-1 {
-    padding: 2.5em;
+  padding: 2.5em;
+}
+
+.services-links {
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  text-wrap: balance;
+}
+
+.services-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.services-links a:hover {
+  color: blue;
 }
 
 #services-row-2 {
-    padding: 6em;
-    justify-content: center;
+  padding: 6em;
+  justify-content: center;
 }
 
 .services-divider-svg {
-    max-width: 50%;
+  max-width: 50%;
 }
 
 .services-img {
-    aspect-ratio: 21/9;
-    width: 100%;
-    object-fit: cover;
+  aspect-ratio: 21/9;
+  width: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 768px) {
-    #services-row-1 img {
-        padding-bottom: 1em;
-    }
+  #services-row-1 img {
+    padding-bottom: 1em;
+  }
 
-    #services-row-2 {
-        padding: 4em;
-    }
+  #services-row-2 {
+    padding: 4em;
+  }
 }

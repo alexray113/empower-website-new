@@ -80,6 +80,10 @@ h3 {
   font-size: 32px;
 }
 
+p {
+  font-family: "Lato", sans-serif;
+}
+
 .navbar-brand {
   font-weight: bold;
   padding: 0.3em;
