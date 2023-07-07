@@ -17,6 +17,12 @@
   margin-bottom: 2em;
 }
 
+@media (max-width: 768px) {
+  .content-row-margins {
+    margin: 0;
+  }
+}
+
 .utility-header {
   text-align: center;
 }
@@ -80,7 +86,7 @@ h3 {
   font-size: 32px;
 }
 
-p {
+p, .btn {
   font-family: "Lato", sans-serif;
 }
 

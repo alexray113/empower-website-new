@@ -2,26 +2,27 @@ html {
   scroll-behavior: smooth;
 }
 
-#services-row-1 {
-  padding: 2.5em;
-}
-
-.services-links {
-  font-size: 30px;
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
-  text-wrap: balance;
-}
-
-@media (max-width: 1399px) {
-  .services-links {
-    font-size: 24px;
+@media (max-width: 768px) {
+  body {
+    background-image: none;
   }
 }
 
-@media (max-width: 768px) {
-  .services-links {
-    max-width: 12ch;
+#services-row-1 {
+  padding: 2.5em;
+  text-wrap: balance;
+}
+
+.services-links .btn {
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  min-width: fit-content;
+}
+
+@media (max-width: 1399px) {
+  .services-links .btn {
+    font-size: 24px;
   }
 }
 
