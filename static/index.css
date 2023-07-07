@@ -6,6 +6,8 @@
   height: 96vh;
   background-image: url(/static/img/priscilla-du-preez-K8XYGbw4Ahg-unsplash.jpg);
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   position: relative;
   z-index: 0;
 }
