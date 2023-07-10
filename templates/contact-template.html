@@ -1,27 +1,38 @@
-{% extends 'base.html' %} {% block title %}{{ therapistInfo['fullname'] }}} | Contact{% endblock %}
-{% block head %}
+{% extends 'base.html' %} {% block title %}{{ therapistInfo['fullname'] }}} |
+Contact{% endblock %} {% block head %}
 <link rel="stylesheet" href="static/contact-template.css" />
 {% endblock %} {% block body %}
 
 <div
-  class="container salmon-bg-color large-container-default content-row-margins"
+  class="container rounded shadow pb-5 px-3 salmon-bg-color large-container-default content-row-margins"
   id="contact-box"
 >
   <div
-    class="row d-flex flex-wrap justify-content-around full-padding-halfem"
+    class="row position-relative d-flex flex-wrap full-padding-halfem"
     id="contact-banner"
   >
     <div
-      class="col-12 col-md-6 order-md-1 contact-portrait-wrapper full-padding-halfem"
+      class="col-12 col-md-6 contact-portrait-wrapper full-padding-halfem"
     >
       <img
-        class="contact-portrait img-fluid rounded mx-auto d-block"
+        class="contact-portrait img-fluid rounded shadow mx-auto"
         src="{{ url_for('static', filename='img/' + therapistInfo['img']) }}"
         alt=""
       />
     </div>
-    <div class="col-12 col-md-6 order-md-2 contact-header">
-      <h1 class="orange-bg-color full-padding-halfem">Contact {{ therapistInfo['fullname'] }}</h1>
+    <div class="position-absolute offset-4 d-none d-md-flex align-self-center">
+      <h1
+        class="orange-bg-color contact-header-text rounded shadow full-padding-halfem"
+      >
+        Contact {{ therapistInfo['fullname'] }}
+      </h1>
+    </div>
+    <div class="d-flex justify-content-center d-md-none col-md-6 order-md-2 contact-header">
+      <h1
+        class="orange-bg-color fs-1 contact-header-text rounded shadow full-padding-halfem"
+      >
+        Contact {{ therapistInfo['fullname'] }}
+      </h1>
     </div>
   </div>
   <div class="row g-5">
