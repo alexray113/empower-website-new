@@ -2,11 +2,12 @@
 
 .orange-bg-color {
   /* background-color: #f57600; */
-  background: radial-gradient(#f57600, #fab473)
+  background: radial-gradient(#f57600, #ffa047)
 }
 
 .salmon-bg-color {
-  background-color: #ffe2dc;
+  /* background-color: #ffe2dc; */
+  background: radial-gradient(#ffe2dc, #fff3f1)
 }
 
 .purple-bg-color {
