@@ -4,7 +4,7 @@ Contact{% endblock %} {% block head %}
 {% endblock %} {% block body %}
 
 <div
-  class="container rounded shadow pb-5 px-3 salmon-bg-color large-container-default content-row-margins"
+  class="container pb-5 px-3 salmon-bg-color large-container-default content-row-margins"
   id="contact-box"
 >
   <div
@@ -15,14 +15,14 @@ Contact{% endblock %} {% block head %}
       class="col-12 col-md-6 contact-portrait-wrapper full-padding-halfem"
     >
       <img
-        class="contact-portrait img-fluid rounded shadow mx-auto"
+        class="contact-portrait img-fluid large-container-default mx-auto"
         src="{{ url_for('static', filename='img/' + therapistInfo['img']) }}"
         alt=""
       />
     </div>
     <div class="position-absolute offset-4 d-none d-md-flex align-self-center">
       <h1
-        class="orange-bg-color contact-header-text rounded shadow full-padding-halfem"
+        class="orange-bg-color contact-header-text large-container-default full-padding-halfem"
       >
         Contact {{ therapistInfo['fullname'] }}
       </h1>

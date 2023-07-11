@@ -1,7 +1,8 @@
 /* ============ utilities styling ============ */
 
 .orange-bg-color {
-  background-color: #f57600;
+  /* background-color: #f57600; */
+  background: radial-gradient(#f57600, #fab473)
 }
 
 .salmon-bg-color {
@@ -9,12 +10,19 @@
 }
 
 .purple-bg-color {
-  background-color: #b6206b;
+  /* background-color: #b6206b; */
+  background: linear-gradient(75deg,#b6206b 55%, #fb44a0 100% )
 }
 
 .content-row-margins {
   margin-top: 2em;
   margin-bottom: 2em;
+}
+
+.large-container-default {
+  box-shadow: 5px 5px 5px rgba(59, 59, 59, 0.6);
+  border-radius: 10px;
+  border: none;
 }
 
 @media (max-width: 768px) {
