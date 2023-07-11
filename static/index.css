@@ -90,6 +90,14 @@
 
 .card {
   max-width: 45%;
+  transition-duration: 300ms;
+  transition-property: all;
+}
+
+.card:hover {
+  cursor:pointer;
+  transform: scale(1.1);
+  z-index: 10;
 }
 
 @media (max-width: 768px) {
