@@ -87,9 +87,15 @@
 }
 
 .services-container a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
   font-weight: 900;
   color: blue;
+}
+
+.services-container a:focus {
+  /* text-decoration: underline; */
+  /* font-weight: 900; */
+  border: blue;
 }
 
 /* ============ links cards styling ============ */
