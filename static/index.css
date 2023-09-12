@@ -1,43 +1,123 @@
 /* ============ homepage styling ============ */
 
-#homepage-row-1-div-1 { 
-    justify-content: center;
-    padding: 35px;
+/* ============ CTA / hero-banner styling ============ */
+
+.cta-hero {
+  height: 96vh;
+  background-image: url(/static/img/priscilla-du-preez-K8XYGbw4Ahg-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0;
 }
 
-#homepage-row-1-div-2 img{
-    width: 95%;
-    height: auto;
-    margin: 20px;
+.cta-hero-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+  color:antiquewhite;
+  text-wrap: balance;
 }
 
-/* .homepage-podcast-link-wrapper img {
-    height: 300px;
-    width: auto;
+.cta-hero-text h1 {
+    line-height: 1.4em;
+    margin-bottom: .5em;
+    max-width: 20ch;
 }
 
-#podcast-hyperlink {
-    display: block;
+.cta-hero-text p {
+    line-height: 1.15em;
+    margin-bottom: 1.5em;
+    max-width: 50ch;
 }
 
-.homepage-links-wrapper img {
-    height: 100px;
-    width: 100px;
+.cta-hero-text::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: left;
+  background-color: rgba(0, 0, 0, 0.664);
+  z-index: -1;
+}
+
+@media (max-width: 1120px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-height: 500px) {
+    .cta-hero {
+        height: 85vh;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 768px) {
-    .homepage-podcast-link-wrapper img {
-        justify-self: center;
+
+    .cta-hero-text {
+        padding:0 2em;
     }
 
-    .homepage-links-wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%
+    .cta-hero-text::after {
+        width: 100%;
     }
+}
 
-    .homepage-links-wrapper a {
-        display: block;
-    }
-} */
+/* ============ services banner styling ============ */
+
+.services-container {
+    min-height: 50vh;
+}
+
+.section-header {
+    padding: 1.5em 0;
+}
+
+.services-container a:hover {
+  text-decoration: underline;
+  font-weight: 900;
+  color: blue;
+}
+
+/* ============ links cards styling ============ */
+
+.card {
+  max-width: 45%;
+  transition-duration: 300ms;
+  transition-property: all;
+}
+
+.card:hover {
+  cursor:pointer;
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 95%;
+  }
+
+  .img-wrapper {
+    max-width: 95%;
+  }
+}
+
+@media (min-width: 576px) {
+  .cta-banner {
+    font-size: 2rem;
+  }
+}

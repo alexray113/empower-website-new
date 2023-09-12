@@ -22,26 +22,30 @@ def view_services():
 
     return render_template("services.html")
 
-@app.route("/contact/<name>")
+@app.route("/contact/<name>", methods=["GET", "POST"])
 def view_contact(name):
-
-    name_check = name
-    staffRoster = {}
-    with open('EMPOWERSTAFFROSTER.json', 'r') as f:
-        staffRoster = json.load(f)
-        f.close()
-
-    therapistInfo = {}
-    for i, therapist in enumerate(staffRoster['data']):
-        if therapist.get('name') == name_check:
-            therapistInfo = staffRoster['data'][i]
-
-    print(f'********therapist info! ::: {therapistInfo}')
         
-    if therapistInfo == {}:
-        return render_template("error.html")
+    if request.method == 'GET':
+        name_check = name
+        staffRoster = {}
+        with open('EMPOWERSTAFFROSTER.json', 'r') as f:
+            staffRoster = json.load(f)
+            f.close()
+
+        therapistInfo = {}
+        for i, therapist in enumerate(staffRoster['data']):
+            if therapist.get('name') == name_check:
+                therapistInfo = staffRoster['data'][i]
+
+        print(f'********therapist info! ::: {therapistInfo}')
+            
+        if therapistInfo == {}:
+            return render_template("error.html")
+        else:
+            return render_template("contact-template.html", therapistInfo=therapistInfo)
+
     else:
-        return render_template("contact-template.html", therapistInfo=therapistInfo)
+        return render_template("error.html")
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)

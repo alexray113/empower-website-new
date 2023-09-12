@@ -1,124 +1,183 @@
 /* ============ utilities styling ============ */
 
 .orange-bg-color {
-    background-color: #f57600;
+  /* background-color: #f57600; */
+  background: radial-gradient(#f57600, #ffa047)
 }
 
 .salmon-bg-color {
-    background-color: #ffe2dc;
+  /* background-color: #ffe2dc; */
+  background: radial-gradient(#ffe2dc, #fff3f1)
 }
 
 .purple-bg-color {
-    background-color: #b6206b;
+  /* background-color: #b6206b; */
+  background: linear-gradient(75deg,#b6206b 55%, #fb44a0 100% )
 }
 
 .content-row-margins {
-    margin-top: 2em;
-    margin-bottom: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.large-container-default {
+  box-shadow: 5px 5px 5px rgba(59, 59, 59, 0.6);
+  border-radius: 10px;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .content-row-margins {
+    margin: 0;
+  }
 }
 
 .utility-header {
-    text-align: center;
+  text-align: center;
 }
 
-.full-padding-halfem{
+.full-padding-halfem {
   padding: 0.5em;
 }
 
 .bottom-padding-1em {
-    padding-bottom: 1em;
+  padding-bottom: 1em;
 }
 
 .bottom-padding-15em {
-    padding-bottom: 1.5em;
+  padding-bottom: 1.5em;
 }
 
 /* ============ base styling ============ */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
-    background-image: url(/static/img/priscilla-du-preez-K8XYGbw4Ahg-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow-x: hidden;
+  background-image: url(/static/img/roman-kraft-0EVKn3-5JSU-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  min-width: 100vw;
+  font-family: "Lato", sans-serif;
+}
+
+@media (max-width: 768px) {
+  body {
+    min-width: none;
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+p, .btn {
+  font-family: "Lato", sans-serif;
 }
 
 .navbar-brand {
-    padding: 0.3em;
-  }
+  font-weight: bold;
+  padding: 0.3em;
+  font-family: "Playfair Display", serif;
+}
 
 #navbarNav {
-    justify-content: right;
-    text-align: right;
-  }
-  
-  @media (max-width: 768px) {
-    #navbarNav {
-      justify-content: center;
-      text-align: center;
-    }
-  }
-  
-  .navbar-brand:hover {
-    background-color: #7b8ac2;
-    color: #d5d2cb;
-    border-radius: 7px;
-  }
-  
-  .nav-link:hover {
-    background-color: #7b8ac2;
-    color: #d5d2cb;
-    border-radius: 7px;
-  }
-  
-  /*------------ base.html footer CSS ------------*/
-  
-  footer {
-    width: 100vw;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 0px;
-    padding-right: 0px;
-    color: #d5d2cb;
-  }
-  
-  #footer-contact-info {
-    justify-content: left;
-    text-align: left;
-    padding-left: 0px;
-  }
-  
-  #footer-logo {
+  justify-content: right;
+  text-align: right;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  #navbarNav {
     justify-content: center;
     text-align: center;
-    align-items: end;
   }
-  
-  #footer-logo-wrapper > * {
-    padding-top: 15px;
-  }
-  
+}
+
+.navbar-brand:hover {
+  background-color: #7b8ac2;
+  color: #d5d2cb;
+  border-radius: 7px;
+}
+
+.nav-link:hover {
+  background-color: #7b8ac2;
+  color: #d5d2cb;
+  border-radius: 7px;
+}
+
+/*------------ base.html footer CSS ------------*/
+
+footer {
+  width: 100vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+  color: #d5d2cb;
+}
+
+#footer-contact-info {
+  justify-content: left;
+  text-align: left;
+  padding-left: 0px;
+}
+
+#footer-logo {
+  justify-content: center;
+  text-align: center;
+  align-items: end;
+}
+
+#footer-logo-wrapper > * {
+  padding-top: 15px;
+}
+
+#footer-nav {
+  justify-content: right;
+  text-align: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#footer-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
   #footer-nav {
-    justify-content: right;
-    text-align: right;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    justify-content: center;
+    text-align: center;
   }
-  
-  #footer-nav ul {
-    margin: 0;
-    padding: 0;
+
+  #footer-contact-info {
+    justify-content: center;
+    text-align: center;
   }
-  
-  @media (max-width: 768px) {
-    #footer-nav {
-      justify-content: center;
-      text-align: center;
-    }
-  
-    #footer-contact-info {
-      justify-content: center;
-      text-align: center;
-    }
-  }
+}

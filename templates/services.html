@@ -1,73 +1,121 @@
-{% extends 'base.html' %} 
-
-{% block title %}Empower{% endblock %} 
-
-{% block head%}
+{% extends 'base.html' %} {% block title %}Empower{% endblock %} {% block head%}
 <link rel="stylesheet" href="/static/services.css" />
-{% endblock %} 
+{% endblock %} {% block body %}
 
-{% block body %}
-
-<div class="container">
+<div class="container-lg px-0">
   <!-- row-1 header / mission statement -->
 
-  <div class="content-row-margins row orange-bg-color" id="services-row-1">
-    <div
-      class="align-self-center col-12 order-2 col-sm-8 order-sm-1"
-      id="homepage-row-1-div-1"
-    >
-      <div>
-        <h1 class="fs-1">Services</h1>
-      </div>
-      <p class="fs-4">
-        At Empower, our mission is to heal and restore your whole ass.
-      </p>
+  <div
+    class="content-row-margins large-container-default d-flex row orange-bg-color"
+    id="services-row-1"
+  >
+    <h1 class="text-center pb-2">Services</h1>
+    <p class="text-center fs-4 py-2 lh-1">
+      At Empower, our mission is to heal and restore your whole ass.
+    </p>
+    <div class="services-links btn-group d-none d-lg-flex justify-content-around">
+      <a class="btn" rel="noopener" href="#Group">Group</a>
+      <a class="btn" rel="noopener" href="#Individual">Individual</a>
+      <a class="btn" rel="noopener" href="#Assessment">Assessment</a>
+      <a class="btn" rel="noopener" href="#DBT-Skills">DBT Skills</a>
+      <a class="btn" rel="noopener" href="#Consulting">Consulting</a>
     </div>
-    <div class="col-12 order-1 col-sm-4 order-sm-2" id="homepage-row-1-div-2">
-      <img
-        src="/static/img/priscilla-du-preez-K8XYGbw4Ahg-unsplash.jpg"
-        class="img-fluid rounded mx-auto d-block"
-        alt=""
-      />
+    <div class="services-links btn-group d-flex justify-content-center d-lg-none">
+      <a class="btn" rel="noopener" href="#Group">Group</a>
+      <a class="btn" rel="noopener" href="#Individual">Individual</a>
+      <a class="btn" rel="noopener" href="#Assessment">Assessment</a>
+    </div>
+    <div class="services-links btn-group d-flex justify-content-center d-lg-none">
+      <a class="btn" rel="noopener" href="#DBT-Skills">DBT Skills</a>
+      <a class="btn" rel="noopener" href="#Consulting">Consulting</a>
     </div>
   </div>
 
   <!-- row 2 services and descriptions -->
 
+  <!-- svg divider sourced from https://svgsilh.com/image/1585002.html -->
+
   <div
-    class="content-row-margins content-rd-flex flex-wrap row salmon-bg-color"
+    class="content-row-margins large-container-default text-center text-lg-start d-flex flex-wrap row salmon-bg-color"
     id="services-row-2"
   >
-    <div class="text-center col-12 fs-1 bottom-padding-1em">Group</div>
-    <div class="col-12 fs-4 mb-3 bottom-padding-15em">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis
-      auctor nisl, ut finibus eros varius sit amet. Duis consectetur orci quis
-      diam posuere viverra.
-    </div>
-    <div class="text-center col-12 fs-1 bottom-padding-1em">Individual</div>
-    <div class="col-12 fs-4 mb-3 bottom-padding-15em">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis
-      auctor nisl, ut finibus eros varius sit amet. Duis consectetur orci quis
-      diam posuere viverra.
-    </div>
-    <div class="text-center col-12 fs-1 bottom-padding-1em">Assessment</div>
-    <div class="col-12 fs-4 mb-3 bottom-padding-15em">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis
-      auctor nisl, ut finibus eros varius sit amet. Duis consectetur orci quis
-      diam posuere viverra.
-    </div>
-    <div class="text-center col-12 fs-1 bottom-padding-1em">DBT Skills</div>
-    <div class="col-12 fs-4 mb-3 bottom-padding-15em">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis
-      auctor nisl, ut finibus eros varius sit amet. Duis consectetur orci quis
-      diam posuere viverra.
-    </div>
-    <div class="text-center col-12 fs-1 bottom-padding-1em">Consulting</div>
-    <div class="col-12 fs-4 mb-3">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis
-      auctor nisl, ut finibus eros varius sit amet. Duis consectetur orci quis
-      diam posuere viverra.
-    </div>
+    <section id="Group">
+      <div class="text-center col-12 bottom-padding-1em"><h2>Group</h2></div>
+      <div class="col-12 fs-4 mb-3 lh-1 bottom-padding-15em">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis
+        auctor nisl, ut finibus eros varius sit amet. Duis consectetur orci quis
+        diam posuere viverra.
+      </div>
+      <img
+        loading="lazy"
+        class="rounded-pill services-img"
+        src="/static/img/vonecia-carswell-0aMMMUjiiEQ-unsplash.jpg"
+      />
+    </section>
+    <img class="services-divider-svg" src="/static/img/1585002.svg" />
+    <section id="Individual">
+      <div class="text-center col-12 fs-1 bottom-padding-1em">
+        <h2>Individual</h2>
+      </div>
+      <div class="col-12 fs-4 mb-3 lh-1 bottom-padding-15em">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis
+        auctor nisl, ut finibus eros varius sit amet. Duis consectetur orci quis
+        diam posuere viverra.
+      </div>
+      <img
+        loading="lazy"
+        class="rounded-pill services-img"
+        src="/static/img/christina-wocintechchat-com-LQ1t-8Ms5PY-unsplash.jpg"
+      />
+    </section>
+    <img class="services-divider-svg" src="/static/img/1585002.svg" />
+    <section id="Assessment">
+      <div class="text-center col-12 fs-1 bottom-padding-1em">
+        <h2>Assessment</h2>
+      </div>
+      <div class="col-12 fs-4 mb-3 lh-1 bottom-padding-15em">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis
+        auctor nisl, ut finibus eros varius sit amet. Duis consectetur orci quis
+        diam posuere viverra.
+      </div>
+      <img
+        loading="lazy"
+        class="rounded-pill services-img"
+        src="/static/img/jeremy-bishop-vGjGvtSfys4-unsplash.jpg"
+      />
+    </section>
+    <img class="services-divider-svg" src="/static/img/1585002.svg" />
+    <section id="DBT-Skills">
+      <div class="text-center col-12 fs-1 bottom-padding-1em">
+        <h2>DBT Skills</h2>
+      </div>
+      <div class="col-12 fs-4 mb-3 lh-1 bottom-padding-15em">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis
+        auctor nisl, ut finibus eros varius sit amet. Duis consectetur orci quis
+        diam posuere viverra.
+      </div>
+      <img
+        loading="lazy"
+        class="rounded-pill services-img"
+        src="/static/img/jason-goodman-wVh5grSMYaY-unsplash.jpg"
+      />
+    </section>
+    <img class="services-divider-svg" src="/static/img/1585002.svg" />
+    <section id="Consulting">
+      <div class="text-center col-12 fs-1 bottom-padding-1em">
+        <h2>Consulting</h2>
+      </div>
+      <div class="col-12 fs-4 mb-3 lh-1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis
+        auctor nisl, ut finibus eros varius sit amet. Duis consectetur orci quis
+        diam posuere viverra.
+      </div>
+      <img
+        loading="lazy"
+        class="rounded-pill services-img"
+        src="/static/img/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg"
+      />
+    </section>
   </div>
 </div>
 {% endblock %}

@@ -3,187 +3,194 @@
 <link rel="stylesheet" href="/static/index.css" />
 {% endblock %} {% block body %}
 
-<div class="container">
+<div class="container-fluid">
   <!-- row-1 header + contact button-->
 
-  <div class="text-center fs-4 content-row-margins row orange-bg-color" id="homepage-row-1">
-    <div class="align-self-center col-12 order-2 col-sm-8 order-sm-1" id="homepage-row-1-div-1">
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-          necessitatibus velit accusantium nemo corporis quae beatae adipisci
-          enim tenetur, nulla porro ad commodi fugit dolores numquam doloremque
-          quod mollitia corrupti odio distinctio nihil dolorum. Ea doloribus eum
-          dolorum ad porro.
-        </p>
-      </div>
-      <button class="contact-us-btn btn btn-lg btn-success" id="contact-us-btn__homepage">
+  <div
+    class="cta-hero text-left fs-5 large-container-default row orange-bg-color"
+    id="homepage-row-1"
+  >
+    <div
+      class="cta-hero-text d-flex py-4 px-lg-5 align-self-center col-12 order-2 col-md-6 order-md-1"
+      id="homepage-row-1-div-1"
+    >
+      <h1>Empower Counseling & Consulting Services</h1>
+      <p class="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+        necessitatibus velit accusantium nemo corporis quae beatae adipisci enim
+        tenetur, nulla porro ad commodi fugit dolores numquam doloremque quod
+        mollitia corrupti odio distinctio nihil dolorum. Ea doloribus eum
+        dolorum ad porro.
+      </p>
+      <button
+        class="contact-us-btn btn btn-lg btn-success"
+        id="contact-us-btn__homepage"
+      >
         Contact Us
       </button>
     </div>
-    <div class="col-12 order-1 col-sm-4 order-sm-2" id="homepage-row-1-div-2">
-      <img
-        src="/static/img/priscilla-du-preez-K8XYGbw4Ahg-unsplash.jpg"
-        class="img-fluid rounded mx-auto d-block"
-        alt=""
-      />
-    </div>
+    <!-- <div
+      class="img-hole col-12 order-1 col-md-6 order-md-2 d-flex justify-content-center align-items-center"
+      id="homepage-row-1-div-2"
+    >
+    </div> -->
   </div>
+</div>
 
-  <!-- row 2 services -->
-
+<!-- row 2 services -->
+<div class="container">
   <div
-    class="content-rd-flex flex-wrap row salmon-bg-color"
+    class="my-4 services-container flex-wrap row large-container-default salmon-bg-color"
     id="homepage-row-2"
   >
-    <div class="text-center fs-1 col-12">Services</div>
+    <div class="section-header text-center col-12"><h2>Services</h2></div>
     <div class="text-center col-12 col-sm-6 fs-3 mb-3">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        fill="currentColor"
-        class="bi bi-diamond"
-        viewBox="0 0 16 16"
+      <a class="btn" rel="noopener" href="/services#Group"
+        ><h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-diamond"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"
+            />
+          </svg>
+          Group Counseling
+        </h3></a
       >
-        <path
-          d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"
-        />
-      </svg>
-      hello1
     </div>
     <div class="text-center col-12 col-sm-6 fs-3 mb-3">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        fill="currentColor"
-        class="bi bi-diamond"
-        viewBox="0 0 16 16"
+      <a class="btn" rel="noopener" href="/services#Individual"
+        ><h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-diamond"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"
+            />
+          </svg>
+          Individual Counseling
+        </h3></a
       >
-        <path
-          d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"
-        />
-      </svg>
-      hello2
     </div>
     <div class="text-center col-12 col-sm-6 fs-3 mb-3">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        fill="currentColor"
-        class="bi bi-diamond"
-        viewBox="0 0 16 16"
+      <a class="btn" rel="noopener" href="#DBT-Skills"
+        ><h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-diamond"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"
+            />
+          </svg>
+          DBT Skills
+        </h3></a
       >
-        <path
-          d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"
-        />
-      </svg>
-      hello3
     </div>
     <div class="text-center col-12 col-sm-6 fs-3 mb-3">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        fill="currentColor"
-        class="bi bi-diamond"
-        viewBox="0 0 16 16"
+      <a class="btn" rel="noopener" href="#Assessment"
+        ><h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-diamond"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"
+            />
+          </svg>
+          Assessment
+        </h3></a
       >
-        <path
-          d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"
-        />
-      </svg>
-      hello4
     </div>
   </div>
 
   <!-- row 3 links -->
 
   <div
-    class="content-row-margins row orange-bg-color d-flex flex-wrap justify-content-around"
+    class="mb-4 row large-container-default orange-bg-color d-flex flex-wrap justify-content-around"
     id="homepage-row-3"
   >
-    <div class="text-center fs-1">Some Links</div>
-    <div class="card mb-3" style="max-width: 540px">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img
-            src="static/img/nima-sarram-4JMOnj7NFKM-unsplash.jpg"
-            class="img-fluid rounded-start"
-            alt="..."
-          />
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Podcast title</h5>
-            <p class="card-text">Description text for the podcast.</p>
-            <p class="card-text">
-              <small class="text-muted">Link added date?</small>
-            </p>
-          </div>
-        </div>
+    <div class="section-header text-center"><h2>Some Links</h2></div>
+    <div class="card mb-3 large-container-default">
+      <div class="ratio ratio-21x9 mt-2">
+        <img
+          src="static/img/nima-sarram-4JMOnj7NFKM-unsplash.jpg"
+          class="object-fit-cover rounded"
+          alt="..."
+        />
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Podcast title</h5>
+        <p class="card-text">Description text for the podcast.</p>
+        <p class="card-text">
+          <small class="text-muted">Link added date?</small>
+        </p>
       </div>
     </div>
-    <div class="card mb-3" style="max-width: 540px">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img
-            src="static/img/leo-maverick-O65TY4EAgQ0-unsplash.jpg"
-            class="img-fluid rounded-start"
-            alt="..."
-          />
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Article title</h5>
-            <p class="card-text">Description text for the article.</p>
-            <p class="card-text">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </p>
-          </div>
-        </div>
+    <div class="card mb-3 large-container-default">
+      <div class="ratio ratio-21x9 mt-2">
+        <img
+          src="static/img/leo-maverick-O65TY4EAgQ0-unsplash.jpg"
+          class="object-fit-cover rounded"
+          alt="..."
+        />
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Article title</h5>
+        <p class="card-text">Description text for the article.</p>
+        <p class="card-text">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </p>
       </div>
     </div>
-    <div class="card mb-3" style="max-width: 540px">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img
-            src="static/img/leo-maverick-O65TY4EAgQ0-unsplash.jpg"
-            class="img-fluid rounded-start"
-            alt="..."
-          />
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Article title</h5>
-            <p class="card-text">article</p>
-            <p class="card-text">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </p>
-          </div>
-        </div>
+    <div class="card mb-3 large-container-default">
+      <div class="ratio ratio-21x9 mt-2">
+        <img
+          src="static/img/leo-maverick-O65TY4EAgQ0-unsplash.jpg"
+          class="object-fit-cover rounded"
+          alt="..."
+        />
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Article title</h5>
+        <p class="card-text">Description text for the article.</p>
+        <p class="card-text">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </p>
       </div>
     </div>
-    <div class="card mb-3" style="max-width: 540px">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img
-            src="static/img/leo-maverick-O65TY4EAgQ0-unsplash.jpg"
-            class="img-fluid rounded-start"
-            alt="..."
-          />
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Article title</h5>
-            <p class="card-text">article</p>
-            <p class="card-text">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </p>
-          </div>
-        </div>
+    <div class="card mb-3 large-container-default">
+      <div class="ratio ratio-21x9 mt-2">
+        <img
+          src="static/img/leo-maverick-O65TY4EAgQ0-unsplash.jpg"
+          class="object-fit-cover rounded"
+          alt="..."
+        />
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Article title</h5>
+        <p class="card-text">Description text for the article.</p>
+        <p class="card-text">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </p>
       </div>
     </div>
   </div>
