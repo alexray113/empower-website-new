@@ -12,7 +12,8 @@
 
 .purple-bg-color {
   /* background-color: #b6206b; */
-  background: linear-gradient(75deg,#b6206b 55%, #fb44a0 100% )
+  /* fb44a0 */
+  background: linear-gradient(75deg, #f651a3 25%, #b6206b 100% )
 }
 
 .content-row-margins {
